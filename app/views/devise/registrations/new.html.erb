@@ -1,0 +1,53 @@
+<div id="content_picture">
+    <%= image_tag 'picture.png', alt: 'Picture not found', id: 'picture' %>
+</div>
+
+<div id="ontop_circle">
+<strong>We will <br> Deliver <br> for you!</strong>
+</div>
+
+<div id="right_side_content">
+<%= render "devise/shared/error_messages", resource: resource %>
+  <h1>Sign Up</h1>
+<div id="form_container">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name))  do |f| %>
+    <div class="form_field">
+        <%= f.label :name ,'First Name:', class: "lab" %><br>
+        <%= f.text_field :name ,class: "input_box", id: "username" %>
+    </div>
+
+    <div class="form_field">
+      <%= f.label :email,"Email:", class: "lab" %><br>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",class: "input_box" %>
+    </div>
+
+    <div class="form_field">
+      <%= f.label :phone_number, "Mobile Number:", class: "lab" %><br>
+      <%= f.telephone_field :phone_number, autofocus: true,class: "input_box"%>
+    </div>
+
+    <div class="form_field">
+      <%= f.label :address, "Address:", class: "lab" %><br>
+      <%= f.text_field :address, autofocus: true,class: "input_box"%>
+    </div>
+
+    <div class="form_field">
+      <%= f.label :password, "Password:", class: "lab" %><br>
+      <%= f.password_field :password, autocomplete: "new-password",class: "input_box"%>
+    </div>
+
+    <div class="form_field">
+      <%= f.label :password_confirmation, "Confirm Password:" , class: "lab"%><br>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password",class: "input_box" %>
+    </div>
+
+    <div id="btn_div1">
+      <%= f.submit "Sign up", id: "btn1"%>
+      <%= link_to "Log in", new_session_path(resource_name), id:"link"%>
+    </div>
+  <% end %>
+</div>    
+  
+
+</div>
+

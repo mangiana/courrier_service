@@ -1,0 +1,68 @@
+<div id="content_picture">
+    <%= image_tag 'picture.png', alt: 'Picture not found', id: 'picture' %>
+</div>
+
+<div id="ontop_circle">
+  <strong>We will <br> Deliver <br> for you!</strong>
+</div>
+
+<div id="right_side_content2">
+  <h1>Forgot your password?</h1>
+  <div id="form_container2">
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      
+      <div class="form_field2">
+      <%= f.label :email,"Email:", class: "lab2" %><br>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",class: "input_box2" %>
+      </div>
+      <div class="actions", id="send_email">
+        <%= f.submit "Send me reset password instructions"%>
+      </div>
+      <div id="btn_div3">
+      <%= link_to "Log in", new_session_path(resource_name), id:"link_to_login_at_reset" %>
+      <%= link_to "Sign up", new_registration_path(resource_name), id:"link_to_signup_at_reset" %>
+      </div>
+      
+    <% end %> 
+    
+  </div>    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

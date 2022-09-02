@@ -1,0 +1,20 @@
+<div id="logo">
+<%= image_tag 'logo.png', alt: 'logo not Found', id: 'logo_pic' %>
+</div>
+
+<nav id="nav_bar">
+  <ul id="nav_list">
+      <% if user_signed_in?%>
+        <%= link_to 'Home', home_path,  class:'nav_items'%>
+        <li class='nav_items'>Account Details</li>
+        <li class='nav_items'>My Services</li>
+        <li class='nav_items'>Services Taken</li>
+      <% end %>
+      <li class='nav_items'>Available Services</li>
+      <% if user_signed_in?%>
+        <%= link_to 'Log Out', destroy_user_session_path,  class:'nav_items',id:"nav_logout", method: :delete%>
+      <% else %>
+      <%= link_to 'Log In', new_user_session_path,  class:'nav_items', id:"nav_login"%>
+      <% end %>
+  </ul>
+</nav>

@@ -1,0 +1,76 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap');
+
+#right_side_content{
+    position: absolute;
+    top: 235px;
+    left: 1250px;
+}
+#right_side_content h1{
+    color: white;
+    text-align: center;
+}
+.form_field{
+    margin: 10px;
+}
+
+.lab{
+    color: white;
+    font-size: 20px;
+
+}
+.input_box{
+    border: solid 1px rgb(2, 7, 58);
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#errors{
+    list-style: none;
+    color: white;
+    margin: 0px
+}
+#error_explain{
+    border: solid 1px yellow;
+}
+#error_heading{
+    border: solid 1px white;
+}
+#btn_div1{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+#btn1{
+    position: absolute;
+    top: 0px;
+    left: 77px;
+    color: rgb(-4.6, 82.2, 157.7);
+    background-color: white;
+    display: inline-block;
+    height: 40px;
+    margin-right: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: none;
+
+}
+#link{
+    border-radius: 5px;
+    color: rgb(-4.6, 82.2, 157.7);
+    background-color: white;
+    display: inline-block;
+    position:absolute;
+    top: 0px;
+    height: 23px;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 8px;
+
+}

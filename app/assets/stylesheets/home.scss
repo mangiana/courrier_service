@@ -1,0 +1,178 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap');
+
+
+
+
+//Pictures Css
+#content_picture{
+    border: solid 15px white;
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#picture{
+    width: 800px;
+    height: 800px;
+}
+
+#content_picture2{
+    border: solid 15px white;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    border-radius:  0 100em 100em 0;
+    overflow: hidden;
+}
+#picture2{
+    height: 800px;
+}
+
+//On top circle Css
+
+#ontop_circle{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+    position: absolute;
+    top: 485px;
+    left: 710px;
+
+}
+#ontop_circle strong{
+    position: absolute;
+    top: 61px;
+    left:68px;
+    color: rgb(-4.6, 82.2, 157.7);
+    font-size: 50px;
+}
+
+#ontop_circle2{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: solid 2px rgb(-4.6, 82.2, 157.7);;
+    border-radius: 50%;
+    position: absolute;
+    top: 485px;
+    left: 710px;
+
+}
+
+//For Root Action
+#right_side_content1{
+    position: absolute;
+    top: 235px;
+    left: 965px;
+   
+}
+
+#right_side_content1 p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#right_side_content1 pre{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    color: rgb(-4.6, 82.2, 157.7);
+    background-color: white;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+#btn_div{
+    text-align: center;
+    margin-top: 10px;
+}
+#icons_container{
+    text-align: center;
+}
+.icons{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(-4.6, 82.2, 157.7);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+//For Home Action
+
+#right_side_content1b{
+    position: absolute;
+    top: 270px;
+    left: 1150px;
+   
+}
+
+#right_side_content1b p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#right_side_content1b pre{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn1b{
+    color: rgb(-4.6, 82.2, 157.7);
+    background-color: white;
+    display: inline-block;
+    height: 18px;
+    width: 200px;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+#btn_div1b{
+    text-align: center;
+    margin-top: 10px;
+}
